@@ -12,7 +12,7 @@ const CounterReducer = (state, action) => {
       return { firstCounter: state.firstCounter - 1 }
 
     case NO_CHANGE:
-      return { firstCounter: state.firstCounter + 0    }
+      return { firstCounter: state.firstCounter + 0 }
 
     default:
       return {

@@ -2,7 +2,6 @@ import React, { createContext, useContext, useReducer } from 'react'
 import CounterContext from '../context/contexts/CounterContext'
 import { INCREMENT, DECREMENT, NO_CHANGE } from '../context/types/CounterTypes'
 const Counter = () => {
-  console.log(useContext(CounterContext))
   const { count, dispatch } = useContext(CounterContext)
 
   return (
