@@ -1,8 +1,9 @@
-import React, { createContext, useContext, useReducer } from 'react'
+import React, {  useContext } from 'react'
 import CounterContext from '../context/contexts/CounterContext'
 import { INCREMENT, DECREMENT, NO_CHANGE } from '../context/types/CounterTypes'
 const Counter = () => {
   const { count, dispatch } = useContext(CounterContext)
+  console.log('Counter state ')
 
   return (
     <div>
